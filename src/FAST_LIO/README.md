@@ -1,0 +1,1 @@
+This directory contains the supplied localization dependency source. See the repository README and THIRD_PARTY.md for build requirements, upstream origin and license. No original flight logs or field routes are included.

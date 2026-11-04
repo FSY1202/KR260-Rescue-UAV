@@ -1,0 +1,14 @@
+{
+  "battery_cells": 4,
+  "battery_start_percent": 88.0,
+  "battery_end_percent": 82.0,
+  "minimum_altitude_m": 1.0,
+  "maximum_altitude_m": 1.1,
+  "minimum_speed_mps": 0.2,
+  "maximum_speed_mps": 0.25,
+  "fixed_voltage_v": 16.8,
+  "minimum_current_a": 2.8,
+  "maximum_current_a": 3.0,
+  "maximum_roll_deg": 1.0,
+  "maximum_pitch_deg": 0.6
+}

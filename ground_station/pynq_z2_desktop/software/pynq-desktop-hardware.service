@@ -1,0 +1,20 @@
+[Unit]
+Description=PYNQ-Z2 combined HDMI and gesture hardware
+Wants=bootpy.service clear_pl_statefile.service
+After=bootpy.service clear_pl_statefile.service
+Before=pynq-desktop-xorg.service gesture-web.service
+PartOf=pynq-desktop.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+Environment=XILINX_XRT=/usr
+WorkingDirectory=/home/xilinx/pynq_z2_desktop
+ExecStart=/usr/local/share/pynq-venv/bin/python3 /home/xilinx/pynq_z2_desktop/software/desktop_hardware.py
+TimeoutStartSec=60
+TimeoutStopSec=15
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=pynq-desktop.target

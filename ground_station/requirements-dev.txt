@@ -1,0 +1,5 @@
+# Host tests and offline previews only; do not upgrade the board image with this.
+numpy>=1.24,<3
+opencv-python-headless>=4.8,<6
+Pillow>=10,<13
+imageio-ffmpeg>=0.5,<1

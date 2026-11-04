@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Gesture Recognition
+Comment=View the running gesture camera
+Exec=/usr/local/share/pynq-venv/bin/python3 /home/xilinx/pynq_z2_desktop/software/desktop_live.py
+Terminal=false
+Icon=camera-video

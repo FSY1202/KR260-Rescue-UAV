@@ -1,0 +1,6 @@
+* -text
+*.sh text eol=lf
+*.bin binary
+*.pt binary
+*.png binary
+*.npz binary

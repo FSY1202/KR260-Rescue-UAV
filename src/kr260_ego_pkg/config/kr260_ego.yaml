@@ -1,0 +1,24 @@
+# Measured values and site declarations are mandatory before execute.
+# False/zero deliberately permits only preview. Do not invent airframe dimensions.
+kr260_ego_controller:
+  ros__parameters:
+    execute: false
+    height_m: 1.0
+    forward_m: 3.0
+    left_m: 0.0
+    speed_mps: 0.2
+    acceleration_mps2: 0.2
+    settle_seconds: 2.0
+    rescue_enabled: true
+    rescue_hover_seconds: 5.0
+    rescue_wait_seconds: 15.0
+    drop_timeout_seconds: 5.0
+    drop_pulse_us: 1000
+    drop_duration_seconds: 1.0
+    airframe_radius_m: 0.26  # User-selected XY envelope; runtime adds 0.15 m obstacle margin.
+    airframe_half_height_m: 0.0
+    site_confirmed: false
+    takeoff_clear: false
+    landing_clear: false
+    site_min: [-1.0, -2.0, 0.6]
+    site_max: [4.0, 2.0, 1.4]

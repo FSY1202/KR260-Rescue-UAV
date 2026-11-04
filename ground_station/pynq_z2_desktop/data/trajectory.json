@@ -1,0 +1,57 @@
+{
+  "description": "Preset 2-D quadcopter route; bottom start, through both gate centers",
+  "duration_seconds": 60,
+  "coordinate_system": "pixel",
+  "map_size": [
+    800,
+    600
+  ],
+  "interpolation": "arc_length_polyline",
+  "illustration_generated": true,
+  "alignment_second_to_first": [
+    188,
+    28
+  ],
+  "points": [
+    [
+      201.25,
+      519.89
+    ],
+    [
+      201.25,
+      301.265
+    ],
+    [
+      264.585,
+      301.265
+    ],
+    [
+      264.585,
+      177.51
+    ],
+    [
+      327.92,
+      177.51
+    ],
+    [
+      327.92,
+      82.63999999999999
+    ],
+    [
+      426.765,
+      82.63999999999999
+    ],
+    [
+      426.765,
+      377.055
+    ],
+    [
+      599.81,
+      377.055
+    ],
+    [
+      599.81,
+      519.89
+    ]
+  ]
+}

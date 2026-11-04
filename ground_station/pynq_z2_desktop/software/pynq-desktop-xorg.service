@@ -1,0 +1,18 @@
+[Unit]
+Description=PYNQ-Z2 HDMI X server
+Requires=pynq-desktop-hardware.service
+After=pynq-desktop-hardware.service
+PartOf=pynq-desktop.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+BindPaths=/dev/pynq-desktop-dri:/dev/dri
+TTYPath=/dev/tty1
+StandardInput=tty
+ExecStart=/usr/lib/xorg/Xorg :0 -config /run/pynq-desktop/xorg.conf -auth /run/pynq-desktop/Xauthority -nolisten tcp -noreset vt1
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=pynq-desktop.target

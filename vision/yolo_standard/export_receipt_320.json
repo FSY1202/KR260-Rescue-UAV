@@ -1,0 +1,11 @@
+{
+  "source_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "imgsz": 320,
+  "quantize": 32,
+  "files": {
+    "metadata.yaml": "3b6b65b8b67bb100e1da47ff16f735e6b9c47cf48ee8cd5a29738f8243998999",
+    "model.ncnn.bin": "46b25571cb0d1edfba4c977927c37dde751cb9a84438cc3968ca47c96e77d9ed",
+    "model.ncnn.param": "79b84052a7b36257eac987f55ffd4d6bc1d3510010f50cf3296eb14c7b8dd4cb",
+    "model_ncnn.py": "903fe931ddf17cf519de33875c34f4ceebe4052c208ee7c861b64d7635343925"
+  }
+}

@@ -1,0 +1,19 @@
+[Unit]
+Description=Read-only Wi-Fi/LAN vehicle telemetry receiver
+After=network.target
+
+[Service]
+User=xilinx
+RuntimeDirectory=pynq-telemetry
+RuntimeDirectoryMode=0750
+EnvironmentFile=-/etc/default/pynq-telemetry
+ExecStart=/usr/local/share/pynq-venv/bin/python3 /home/xilinx/pynq_z2_desktop/software/telemetry_receiver.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/run/pynq-telemetry
+
+[Install]
+WantedBy=multi-user.target

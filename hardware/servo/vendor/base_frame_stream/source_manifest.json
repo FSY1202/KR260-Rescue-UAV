@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "baseline": "kr260_camera_stream FRM2",
+  "copied_utc": "2026-10-30T11:41:42.3284895Z",
+  "source_root": "fpga/kr260_camera_stream",
+  "files": [
+    {
+      "source": "fpga/kr260_camera_stream/rtl/color_detector_core.sv",
+      "frozen": "vendor/base_frame_stream/rtl/color_detector_core.sv",
+      "bytes": 12494,
+      "sha256": "5b90d5793d2877e23affef3a1a19b8b32955f803aba68c8ebc7f0cd66659027f"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/rtl/color_detector_top.sv",
+      "frozen": "vendor/base_frame_stream/rtl/color_detector_top.sv",
+      "bytes": 14107,
+      "sha256": "92c29d6a56999966fcf3ce24b3c3b6fbc2e476d55199ae9d70e7669b01ee437e"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/rtl/color_detector_wrapper.v",
+      "frozen": "vendor/base_frame_stream/rtl/color_detector_wrapper.v",
+      "bytes": 4110,
+      "sha256": "f061ec5ac83d34896f28f3b7f66279aa7f0d16b7799ac81a779fedd93e77cfe1"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/rtl/dvp_frame_source.sv",
+      "frozen": "vendor/base_frame_stream/rtl/dvp_frame_source.sv",
+      "bytes": 3560,
+      "sha256": "acf408c295e0a9870dee2e43a1a0c4e70b52003d7a6b5e976e5af30de202867b"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/rtl/frame_capture_axi.sv",
+      "frozen": "vendor/base_frame_stream/rtl/frame_capture_axi.sv",
+      "bytes": 17279,
+      "sha256": "554d9cce30e18c30789a86fa429816101def7d95541ec8bfa3d0fcd5625b9077"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/rtl/frame_capture_wrapper.v",
+      "frozen": "vendor/base_frame_stream/rtl/frame_capture_wrapper.v",
+      "bytes": 4020,
+      "sha256": "7a60abfeaf2e55370f3c085b30c352dc04033c333c803c3d84ce29b3a7023598"
+    },
+    {
+      "source": "fpga/kr260_camera_stream/constraints/adapter20261026.xdc",
+      "frozen": "vendor/base_frame_stream/constraints/adapter20261026.xdc",
+      "bytes": 2148,
+      "sha256": "e6d6f8f23e50b50087d571657a8688385caed3d1d9e330a8490c537e94da292a"
+    }
+  ],
+  "reference_sha256": {
+    "create_project_tcl": "1d63c97f08f78b27142688ccea7b0101f4a2616a5966470b7b2d589c90b2c110",
+    "device_tree_dts": "9071b8cf4b6e2861da9c8ea2c5bdf226599691da840da8b90922bbd161e71cdf"
+  }
+}
