@@ -1,0 +1,9 @@
+{
+  "captured_on": "2026-10-17",
+  "description": "KR260 configuration baseline; 2026-10-20 source-fix candidate adds explicit reliable IMU capacity and input guard. Not yet a deployed validation receipt.",
+  "files": {
+    "MID360_kr260_sdk2.json": "4900d43ace3fb92f9bbe842f6cc23237326d0566d420378cb2eeefca7d858ddc",
+    "mid360_kr260.yaml": "552b5b6a77bddb75a94ba228810f4c065b2beea300273fc4ad6e6c4f63194b7c",
+    "bridge.yaml": "06838456d8411dcf2610fcf21ca789bb3a6cb630b2e16d44bb1b496744dc8edc"
+  }
+}

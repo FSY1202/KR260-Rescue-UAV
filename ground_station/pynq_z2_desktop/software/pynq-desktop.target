@@ -1,0 +1,8 @@
+[Unit]
+Description=PYNQ-Z2 HDMI desktop and gesture recognition
+Requires=pynq-desktop-hardware.service pynq-desktop-xorg.service pynq-desktop-session.service
+Wants=gesture-web.service pynq-desktop-camera.service map-display.service flight-status.service
+After=pynq-desktop-session.service
+
+[Install]
+WantedBy=multi-user.target

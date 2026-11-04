@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>kr260_ego_core</name><version>0.1.0</version>
+  <description>ROS-independent geometry, bounded mapping and guarded EGO mission.</description>
+  <maintainer email="kr260@example.com">KR260 team</maintainer><license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

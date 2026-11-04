@@ -1,0 +1,20 @@
+[Unit]
+Description=PYNQ-Z2 local gesture camera preview
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/xilinx/pynq_z2_gesture/software
+ExecStart=/bin/bash /home/xilinx/pynq_z2_gesture/software/run_gesture_web.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+KillMode=mixed
+StandardOutput=append:/home/xilinx/gesture-web.log
+StandardError=append:/home/xilinx/gesture-web.log
+
+[Install]
+WantedBy=multi-user.target

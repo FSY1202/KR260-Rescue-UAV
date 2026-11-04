@@ -1,0 +1,53 @@
+kr260_ego_planner:
+  ros__parameters:
+    kr260.enabled: true
+    kr260.odom_body_twist: true
+    fsm/flight_type: 1
+    fsm/thresh_replan_time: 0.5
+    fsm/thresh_no_replan_meter: 0.15
+    fsm/planning_horizon: 4.0
+    fsm/planning_horizen_time: 3.0
+    fsm/emergency_time: 1.5
+    fsm/realworld_experiment: false
+    fsm/fail_safe: false
+    fsm/waypoint_num: 0
+    grid_map/resolution: 0.1
+    grid_map/map_size_x: 10.0
+    grid_map/map_size_y: 10.0
+    grid_map/map_size_z: 3.0
+    grid_map/ground_height: -0.5
+    grid_map/local_update_range_x: 5.0
+    grid_map/local_update_range_y: 5.0
+    grid_map/local_update_range_z: 3.0
+    grid_map/obstacles_inflation: 0.0  # KR260 shared map already inflated
+    grid_map/obstacles_inflation_z: 0.0
+    grid_map/local_map_margin: 1
+    grid_map/skip_pixel: 2
+    grid_map/pose_type: 1
+    grid_map/frame_id: camera_init
+    grid_map/visualization_truncate_height: 2.5
+    grid_map/virtual_ceil_height: -1.0
+    grid_map/odom_depth_timeout: 0.3
+    manager/max_vel: 0.1  # component cap leaves room under the 0.2 vector-norm cap
+    manager/max_acc: 0.1
+    manager/max_jerk: 0.4
+    manager/control_points_distance: 0.15
+    manager/feasibility_tolerance: 0.0
+    manager/planning_horizon: 4.0
+    manager/use_distinctive_trajs: true
+    manager/drone_id: -1
+    optimization/lambda_smooth: 1.0
+    optimization/lambda_collision: 0.5
+    optimization/lambda_feasibility: 0.1
+    optimization/lambda_fitness: 1.0
+    optimization/lambda_z: 1.0
+    optimization/dist0: 0.15
+    optimization/swarm_clearance: 0.5
+    optimization/max_vel: 0.1
+    optimization/max_acc: 0.1
+    bspline/limit_vel: 0.1
+    bspline/limit_acc: 0.1
+    bspline/limit_ratio: 1.0
+    prediction/obj_num: 0
+    prediction/lambda: 1.0
+    prediction/predict_rate: 1.0

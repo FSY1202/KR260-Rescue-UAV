@@ -1,0 +1,26 @@
+/fmu/out/vehicle_local_position_v1: &sensor
+  reliability: best_effort
+  durability: volatile
+  history: keep_last
+  depth: 10
+/fmu/out/vehicle_status_v3: *sensor
+/fmu/out/vehicle_land_detected: *sensor
+/fmu/out/failsafe_flags: *sensor
+/fmu/out/vehicle_odometry: *sensor
+/fmu/out/vehicle_command_ack_v1: *sensor
+/fmu/in/vehicle_visual_odometry: *sensor
+/Odometry: *sensor
+/fmu/in/offboard_control_mode: *sensor
+/fmu/in/trajectory_setpoint: *sensor
+/fmu/in/vehicle_command: *sensor
+/kr260/ego/status: &diagnostic
+  reliability: reliable
+  durability: volatile
+  history: keep_last
+  depth: 20
+/kr260/ego/events: *diagnostic
+/kr260/ego/goal: *diagnostic
+/kr260/ego/bspline: *diagnostic
+/kr260/ego/planner_health: *diagnostic
+/kr260/ego/odometry: *diagnostic
+/kr260/ego/preview_odometry: *diagnostic

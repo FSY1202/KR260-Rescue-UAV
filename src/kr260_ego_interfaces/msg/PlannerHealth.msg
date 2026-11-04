@@ -1,0 +1,9 @@
+std_msgs/Header header
+string run_id
+string state
+uint64 map_revision
+builtin_interfaces/Time map_source_stamp
+bool map_valid
+bool have_odometry
+bool emergency
+float64 planning_ms

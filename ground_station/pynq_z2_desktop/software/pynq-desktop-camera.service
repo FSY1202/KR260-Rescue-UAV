@@ -1,0 +1,18 @@
+[Unit]
+Description=PYNQ-Z2 BTN0 camera display control
+Requires=pynq-desktop-session.service
+After=pynq-desktop-session.service
+PartOf=pynq-desktop.target
+
+[Service]
+User=xilinx
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/run/pynq-desktop/Xauthority
+Environment=XDG_RUNTIME_DIR=/run/pynq-xfce
+Environment=LIBGL_ALWAYS_SOFTWARE=1
+ExecStart=/usr/local/share/pynq-venv/bin/python3 /home/xilinx/pynq_z2_desktop/software/desktop_live.py --button-control /run/pynq-desktop/camera-button.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=pynq-desktop.target

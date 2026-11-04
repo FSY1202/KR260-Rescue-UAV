@@ -1,0 +1,12 @@
+{
+  "model": "TIANKONGRC TD-8120MG 180deg",
+  "source": "Owner-provided product label photos, 2026-10-30",
+  "supply_voltage_v": 5,
+  "label_min_pulse_us": 500,
+  "label_max_pulse_us": 2500,
+  "initial_test_min_pulse_us": 500,
+  "initial_test_max_pulse_us": 1700,
+  "max_test_duration_s": 3,
+  "period_us": 20000,
+  "mechanical_endpoints_calibrated": false
+}

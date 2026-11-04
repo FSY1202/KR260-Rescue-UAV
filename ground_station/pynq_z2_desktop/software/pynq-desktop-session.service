@@ -1,0 +1,24 @@
+[Unit]
+Description=PYNQ-Z2 XFCE desktop for xilinx
+Requires=pynq-desktop-xorg.service
+After=pynq-desktop-xorg.service
+PartOf=pynq-desktop.target
+
+[Service]
+Type=simple
+User=xilinx
+WorkingDirectory=/home/xilinx
+RuntimeDirectory=pynq-xfce
+RuntimeDirectoryMode=0700
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/run/pynq-desktop/Xauthority
+Environment=XDG_RUNTIME_DIR=/run/pynq-xfce
+Environment=XDG_SESSION_TYPE=x11
+Environment=LIBGL_ALWAYS_SOFTWARE=1
+ExecStartPre=/usr/bin/python3 /home/xilinx/pynq_z2_desktop/software/wait_xorg.py
+ExecStart=/usr/bin/dbus-run-session -- /usr/bin/xfce4-session
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=pynq-desktop.target

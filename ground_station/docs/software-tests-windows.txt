@@ -1,0 +1,33 @@
+test_bounce_hold_release_and_second_press (test_button_input.ButtonPressTests.test_bounce_hold_release_and_second_press) ... ok
+test_held_during_boot_needs_release_first (test_button_input.ButtonPressTests.test_held_during_boot_needs_release_first) ... ok
+test_short_noise_is_rejected (test_button_input.ButtonPressTests.test_short_noise_is_rejected) ... ok
+test_arc_length_speed_and_corners (test_point_cloud_map.PresetTests.test_arc_length_speed_and_corners) ... ok
+test_bottom_start_and_gate_centers (test_point_cloud_map.PresetTests.test_bottom_start_and_gate_centers) ... ok
+test_reference_alignment_and_reproducibility (test_point_cloud_map.PresetTests.test_reference_alignment_and_reproducibility) ... ok
+test_scan_accumulates_and_hidden_clock_catches_up (test_point_cloud_map.PresetTests.test_scan_accumulates_and_hidden_clock_catches_up) ... ok
+test_btn_debounce_long_hold (test_flight_status.DemoTests.test_btn_debounce_long_hold) ... ok
+test_heading_wrap_and_independent_clock (test_flight_status.DemoTests.test_heading_wrap_and_independent_clock) ... ok
+test_horizon_signs_and_compass_range (test_flight_status.DemoTests.test_horizon_signs_and_compass_range) ... ok
+test_invalid_inputs_and_config (test_flight_status.DemoTests.test_invalid_inputs_and_config) ... ok
+test_limits_and_derivative (test_flight_status.DemoTests.test_limits_and_derivative) ... ok
+test_native_nearest_strided_surface (test_flight_status.DemoTests.test_native_nearest_strided_surface) ... skipped 'Native ARM raster not available on this host'
+test_raster_assets_and_all_phases (test_flight_status.DemoTests.test_raster_assets_and_all_phases) ... ok
+test_stage_and_arming_boundaries (test_flight_status.DemoTests.test_stage_and_arming_boundaries) ... ok
+test_actual_camera_failures_and_other_gestures (test_classify_hand.HandClassifierTest.test_actual_camera_failures_and_other_gestures) ... ok
+test_empty_full_and_thin_object (test_classify_hand.HandClassifierTest.test_empty_full_and_thin_object) ... ok
+test_single_extended_finger_is_not_fist (test_classify_hand.HandClassifierTest.test_single_extended_finger_is_not_fist) ... ok
+test_three_fingers_are_not_open_hand (test_classify_hand.HandClassifierTest.test_three_fingers_are_not_open_hand) ... ok
+test_three_labels_with_wrist_in_four_directions (test_classify_hand.HandClassifierTest.test_three_labels_with_wrist_in_four_directions) ... ok
+test_image_and_labels_use_one_published_frame (test_gesture_web.GestureWebTest.test_image_and_labels_use_one_published_frame) ... ok
+test_local_display_needs_no_jpeg_until_an_http_image_request (test_gesture_web.GestureWebTest.test_local_display_needs_no_jpeg_until_an_http_image_request) ... ok
+test_bad_header_rejected (test_local_preview.LocalPreviewTests.test_bad_header_rejected) ... skipped 'Linux shared frame transport'
+test_pixels_labels_contours_and_empty_contour (test_local_preview.LocalPreviewTests.test_pixels_labels_contours_and_empty_contour) ... skipped 'Linux shared frame transport'
+test_slow_reader_never_blocks_inference (test_local_preview.LocalPreviewTests.test_slow_reader_never_blocks_inference) ... skipped 'Linux shared frame transport'
+test_zero_copy_lease_leaves_other_slots_available (test_local_preview.LocalPreviewTests.test_zero_copy_lease_leaves_other_slots_available) ... skipped 'Linux shared frame transport'
+test_native_640_detail_is_not_downsampled (test_preview_detail.PreviewDetailTests.test_native_640_detail_is_not_downsampled) ... ok
+test_roi_and_contour_use_scaled_analysis_coordinates (test_preview_detail.PreviewDetailTests.test_roi_and_contour_use_scaled_analysis_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.309s
+
+OK (skipped=5)

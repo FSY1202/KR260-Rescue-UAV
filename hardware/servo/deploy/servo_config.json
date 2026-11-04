@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "supply_voltage_v": 5,
+  "signal_voltage_v": 3.3,
+  "period_us": 20000,
+  "pulse0_us": 1500,
+  "pulse1_us": 1500,
+  "enable_mask": 0,
+  "servo_model_confirmed": false
+}

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(kr260_ego_support)
+find_package(ament_cmake REQUIRED)
+install(PROGRAMS scripts/ego_runtime_support.py scripts/px4_interface_check.py DESTINATION lib/${PROJECT_NAME})
+install(FILES config/px4_interface_lock.json DESTINATION share/${PROJECT_NAME}/config)
+ament_package()

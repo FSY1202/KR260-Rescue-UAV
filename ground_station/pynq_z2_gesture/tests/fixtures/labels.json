@@ -1,0 +1,107 @@
+[
+  {
+    "file": "fist_wrist_01.png",
+    "expected": "FIST",
+    "source_frame": 4875,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_wrist_02.png",
+    "expected": "FIST",
+    "source_frame": 4908,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_wrist_03.png",
+    "expected": "FIST",
+    "source_frame": 4915,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_wrist_04.png",
+    "expected": "FIST",
+    "source_frame": 5065,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": true
+  },
+  {
+    "file": "fist_wrist_05.png",
+    "expected": "FIST",
+    "source_frame": 5104,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_wrist_06.png",
+    "expected": "FIST",
+    "source_frame": 5136,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed held fist while rotating",
+    "partially_clipped": false
+  },
+  {
+    "file": "scissors_edge_01.png",
+    "expected": "V",
+    "source_frame": 12378,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed displayed gesture",
+    "partially_clipped": false
+  },
+  {
+    "file": "scissors_edge_02.png",
+    "expected": "V",
+    "source_frame": 12495,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed displayed gesture",
+    "partially_clipped": false
+  },
+  {
+    "file": "open_edge_01.png",
+    "expected": "OPEN",
+    "source_frame": 23900,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed displayed gesture",
+    "partially_clipped": false
+  },
+  {
+    "file": "open_edge_02.png",
+    "expected": "OPEN",
+    "source_frame": 24041,
+    "source": "PYNQ-Z2 PL-cleaned mask; user confirmed displayed gesture",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_shadow_01.png",
+    "expected": "FIST",
+    "source_frame": 1339,
+    "source": "User-confirmed close fist; lighting notch connects to exterior background",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_shadow_02.png",
+    "expected": "FIST",
+    "source_frame": 1418,
+    "source": "User-confirmed close fist; lighting notch connects to exterior background",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_shadow_03.png",
+    "expected": "FIST",
+    "source_frame": 1490,
+    "source": "User-confirmed close fist; lighting notch connects to exterior background",
+    "partially_clipped": false
+  },
+  {
+    "file": "fist_lobe_01.png",
+    "expected": "FIST",
+    "partially_clipped": false,
+    "allow_unknown": true,
+    "source": "User-confirmed fist, exact raw YUYV reference with Y20; conservative UNKNOWN allowed, V forbidden"
+  },
+  {
+    "file": "fist_lobe_02.png",
+    "expected": "FIST",
+    "partially_clipped": false,
+    "allow_unknown": true,
+    "source": "User-confirmed fist, exact raw YUYV reference with Y20; conservative UNKNOWN allowed, V forbidden"
+  }
+]

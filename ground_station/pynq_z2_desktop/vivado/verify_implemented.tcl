@@ -1,0 +1,5 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+open_checkpoint [file join $root build desktop_gesture.runs impl_1 desktop_gesture_wrapper_routed.dcp]
+report_bus_skew -file [file join $root output bus_skew.rpt]
+check_timing -verbose -file [file join $root output check_timing.rpt]
+report_clock_interaction -file [file join $root output clock_interaction.rpt]

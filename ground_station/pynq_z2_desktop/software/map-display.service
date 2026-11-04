@@ -1,0 +1,23 @@
+[Unit]
+Description=PYNQ-Z2 BTN1 map and flight trajectory display
+Requires=pynq-desktop-session.service
+After=pynq-desktop-session.service
+PartOf=pynq-desktop.target
+
+[Service]
+User=xilinx
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/run/pynq-desktop/Xauthority
+Environment=XDG_RUNTIME_DIR=/run/pynq-xfce
+Environment=LIBGL_ALWAYS_SOFTWARE=1
+ExecStart=/usr/local/share/pynq-venv/bin/python3 \
+    /home/xilinx/pynq_z2_desktop/software/map_display.py \
+    --point-cloud /home/xilinx/pynq_z2_desktop/data/map_cloud.npz \
+    --trajectory /home/xilinx/pynq_z2_desktop/data/trajectory.json \
+    --button-control /run/pynq-desktop/map-button.json \
+    --selection-control /run/pynq-desktop/view-selection.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=pynq-desktop.target
